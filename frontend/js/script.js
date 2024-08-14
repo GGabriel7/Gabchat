@@ -96,7 +96,7 @@ const enterChat = (event) => {
     login.style.display = 'none'
     chat.style.display = 'flex'
 
-    websocket = new WebSocket("ws://localhost:8080")
+    websocket = new WebSocket("wss://gabchat-backend.onrender.com")
     websocket.onmessage = procesandoMensagem
 }
 
